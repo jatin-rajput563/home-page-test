@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.Plus-Jakarta-Sans {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.Manrope {
+    font-family: "Manrope", sans-serif;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.ml-24 {
+    margin-left: 24px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+
+.mt-50 {
+    margin-top: 70px;
+}
+
+/* =================nav-bar======================= */
+.nav-text:hover {
+    -webkit-text-stroke: 1px;
+}
+
+.w-82 {
+    width: 82%;
+}
+
+.nav-btn {
+    width: 186px;
+    height: 52px;
+    border: 0;
+    border: 2px solid;
+}
+
+.nav-btn:hover {
+    background-color: white;
+    color: #FF0000;
+}
+.nav-btn:hover svg path{
+    fill: red;
+}
+
+.line-1-1 {
+    transform-origin: left;
+    transform: rotate(35deg);
+    transition: all 300ms linear;
+}
+
+.line-2 {
+    background-color: transparent !important;
+}
+
+.line-3 {
+    transform-origin: left;
+    transform: rotate(-35deg);
+    transition: all 300ms linear;
+}
+
+.nav-vibrate:hover {
+    animation: shaking 0.2s infinite;
+}
+
+@keyframes shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    70% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* =====================hero-sectcion===================== */
+.bg-image {
+    background-image: url(/assets/image/hero-background.png);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-card {
+    max-width: 830px;
+    height: 243px;
+}
+
+.hero-card-2 {
+    max-width: 742px;
+    height: 58px;
+}
+
+.Get-btn {
+    width: 173px;
+    height: 63px;
+    padding: 20px 32px 20px 32px;
+    gap: 10px;
+    border-radius: 56px;
+    color: white;
+    background: #FF0000;
+    border: none;
+}
+
+.Get-btn:hover {
+    background-color: white;
+    color: red;
+}
+
+.google-card {
+    max-width: 229.17px;
+    height: 80px;
+    border-radius: 16px;
+    border: 0.83px;
+    background: #FFFFFF;
+}
+
+.star-card {
+    max-width: 229.17px;
+    height: 80px;
+    border-radius: 16px;
+    border: 0.83px;
+    background: #FFFFFF;
+    margin-left: 24px;
+}
+
+/* ==========================responsive========================= */
+@media (max-width: 992px) {
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%) !important;
+        width: 75%;
+        position: fixed;
+        justify-content: center;
+        bottom: 0;
+        left: -100% !important;
+        top: 0%;
+        z-index: 2;
+        transition: all 0.3s linear !important;
+    }
+
+    .menu-btn {
+        width: 35px;
+        align-content: center !important;
+        background: none;
+        display: block;
+        z-index: 3;
+    }
+
+    .line {
+        height: 4px;
+        display: flex;
+        margin: 4px;
+        background: red;
+    }
+
+    .line-1 {
+        width: 13px;
+    }
+
+    .hero-card-2 {
+        margin-top: 100px;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .img-prnt-3 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-card-2 {
+        margin-top: 300px;
+        width: 100%;
+    }
+
+    .img-prnt-2 {
+        flex-direction: column;
+    }
+
+    .img-prnt-3 {
+        flex-direction: column;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .btn-prnt {
+        margin-top: 50px;
+    }
+
+    .google-card {
+        margin-top: 10px;
+    }
+
+    .star-card {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .hero-card-2 {
+        margin-top: 300px;
+        width: 100%;
+    }
+
+    .hero-card {
+        width: 100%;
+        margin-bottom: 300px;
+    }
+
+    .btn-prnt {
+        margin-top: 50px;
+    }
+
+    .img-prnt-2 {
+        flex-direction: column;
+    }
+
+    .img-prnt-3 {
+        flex-direction: column;
+    }
+
+    .google-card {
+        margin-top: 10px;
+    }
+
+    .star-card {
+        margin-top: 10px;
+    }
+}
