@@ -53,7 +53,8 @@
     background-color: white;
     color: #FF0000;
 }
-.nav-btn:hover svg path{
+
+.nav-btn:hover svg path {
     fill: red;
 }
 
@@ -139,6 +140,12 @@
     border-radius: 16px;
     border: 0.83px;
     background: #FFFFFF;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.google-card:hover {
+    transform: scale(1.1);
 }
 
 .star-card {
@@ -148,6 +155,12 @@
     border: 0.83px;
     background: #FFFFFF;
     margin-left: 24px;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.star-card:hover {
+    transform: scale(1.1);
 }
 
 /* ==========================responsive========================= */
